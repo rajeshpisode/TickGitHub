@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    android:layout_weight="10"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp">
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.3"
+    android:src="@drawable/logo"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_200"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/board"
+        android:layout_marginTop="@dimen/pad_5"
+        android:layout_marginLeft="@dimen/margin_left_55"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/get_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textSize="@dimen/txt_20"
+            android:textColor="#FB9931"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/register_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register now and get 1000 points"
+            android:textColor="#fff"
+            android:layout_below="@+id/get_txt"
+            android:gravity="center"
+            android:textSize="@dimen/txt_18"/>
+
+        <LinearLayout
+            android:id="@+id/email_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_txt"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top_40"
+            android:layout_marginLeft="@dimen/margin_left_60">
+            <ImageView
+                android:layout_width="@dimen/width_50"
+                android:layout_height="@dimen/width_50"
+                android:src="@drawable/message"/>
+            <EditText
+                android:id="@+id/emai_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=" Email"
+                android:textColorHint="#fff"
+                android:textSize="@dimen/txt_25"
+                android:textColor="#fff"
+                android:layout_marginLeft="@dimen/margin_left_70"
+                android:layout_marginRight="20dp"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:imeActionId="@+id/email"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/pass_lin"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_lin"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top_40"
+            android:layout_marginLeft="@dimen/margin_left_60">
+            <ImageView
+                android:layout_width="@dimen/width_50"
+                android:layout_height="@dimen/width_50"
+                android:src="@drawable/password_iocn"/>
+            <EditText
+                android:id="@+id/paswd_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:textSize="@dimen/txt_25"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:layout_marginLeft="@dimen/margin_left_70"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:inputType="textVisiblePassword"
+                android:password="true"
+                android:imeActionId="@+id/password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mobile_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass_lin"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top_40"
+            android:layout_marginLeft="@dimen/margin_left_60">
+            <ImageView
+                android:layout_width="@dimen/width_50"
+                android:layout_height="@dimen/width_50"
+                android:src="@drawable/mobile"/>
+            <EditText
+                android:id="@+id/mobile_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Mobile"
+                android:textSize="@dimen/txt_25"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:layout_marginLeft="@dimen/margin_left_70"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:imeActionId="@+id/mobile"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signin_btn"
+            android:layout_marginTop="@dimen/margin_top_100"
+            />
+
+        <ImageView
+            android:id="@+id/fb_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fb_btn"
+            android:layout_below="@+id/signin"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gmail_btn"
+            android:layout_below="@+id/fb_login"
+           />
+
+        </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/play_btn"/>
+
+</LinearLayout>
